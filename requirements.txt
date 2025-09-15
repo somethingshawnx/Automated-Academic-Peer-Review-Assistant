@@ -1,0 +1,19 @@
+requests
+feedparser
+tqdm
+PyMuPDF            # fitz
+pdfminer.six
+beautifulsoup4
+sentence-transformers
+faiss-cpu
+transformers
+datasets
+scikit-learn
+fastapi
+uvicorn
+pandas
+label-studio-sdk  
+huggingface_hub
+flask 
+pyPDF2
+pint
