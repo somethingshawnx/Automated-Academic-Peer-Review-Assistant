@@ -1,0 +1,1244 @@
+[
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_1.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_1.txt",
+        "refs_path": "data\\references\\machine learning_paper_1_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_10.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_10.txt",
+        "refs_path": "data\\references\\machine learning_paper_10_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_100.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_100.txt",
+        "refs_path": "data\\references\\machine learning_paper_100_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_101.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_101.txt",
+        "refs_path": "data\\references\\machine learning_paper_101_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_102.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_102.txt",
+        "refs_path": "data\\references\\machine learning_paper_102_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_103.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_103.txt",
+        "refs_path": "data\\references\\machine learning_paper_103_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_104.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_104.txt",
+        "refs_path": "data\\references\\machine learning_paper_104_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_105.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_105.txt",
+        "refs_path": "data\\references\\machine learning_paper_105_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_106.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_106.txt",
+        "refs_path": "data\\references\\machine learning_paper_106_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_107.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_107.txt",
+        "refs_path": "data\\references\\machine learning_paper_107_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_108.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_108.txt",
+        "refs_path": "data\\references\\machine learning_paper_108_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_109.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_109.txt",
+        "refs_path": "data\\references\\machine learning_paper_109_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_11.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_11.txt",
+        "refs_path": "data\\references\\machine learning_paper_11_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_110.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_110.txt",
+        "refs_path": "data\\references\\machine learning_paper_110_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_111.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_111.txt",
+        "refs_path": "data\\references\\machine learning_paper_111_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_112.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_112.txt",
+        "refs_path": "data\\references\\machine learning_paper_112_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_113.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_113.txt",
+        "refs_path": "data\\references\\machine learning_paper_113_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_114.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_114.txt",
+        "refs_path": "data\\references\\machine learning_paper_114_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_115.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_115.txt",
+        "refs_path": "data\\references\\machine learning_paper_115_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_116.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_116.txt",
+        "refs_path": "data\\references\\machine learning_paper_116_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_117.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_117.txt",
+        "refs_path": "data\\references\\machine learning_paper_117_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_118.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_118.txt",
+        "refs_path": "data\\references\\machine learning_paper_118_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_119.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_119.txt",
+        "refs_path": "data\\references\\machine learning_paper_119_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_12.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_12.txt",
+        "refs_path": "data\\references\\machine learning_paper_12_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_120.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_120.txt",
+        "refs_path": "data\\references\\machine learning_paper_120_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_121.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_121.txt",
+        "refs_path": "data\\references\\machine learning_paper_121_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_122.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_122.txt",
+        "refs_path": "data\\references\\machine learning_paper_122_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_123.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_123.txt",
+        "refs_path": "data\\references\\machine learning_paper_123_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_124.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_124.txt",
+        "refs_path": "data\\references\\machine learning_paper_124_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_125.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_125.txt",
+        "refs_path": "data\\references\\machine learning_paper_125_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_126.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_126.txt",
+        "refs_path": "data\\references\\machine learning_paper_126_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_127.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_127.txt",
+        "refs_path": "data\\references\\machine learning_paper_127_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_128.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_128.txt",
+        "refs_path": "data\\references\\machine learning_paper_128_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_129.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_129.txt",
+        "refs_path": "data\\references\\machine learning_paper_129_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_13.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_13.txt",
+        "refs_path": "data\\references\\machine learning_paper_13_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_130.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_130.txt",
+        "refs_path": "data\\references\\machine learning_paper_130_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_131.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_131.txt",
+        "refs_path": "data\\references\\machine learning_paper_131_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_132.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_132.txt",
+        "refs_path": "data\\references\\machine learning_paper_132_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_133.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_133.txt",
+        "refs_path": "data\\references\\machine learning_paper_133_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_134.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_134.txt",
+        "refs_path": "data\\references\\machine learning_paper_134_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_135.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_135.txt",
+        "refs_path": "data\\references\\machine learning_paper_135_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_136.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_136.txt",
+        "refs_path": "data\\references\\machine learning_paper_136_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_137.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_137.txt",
+        "refs_path": "data\\references\\machine learning_paper_137_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_138.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_138.txt",
+        "refs_path": "data\\references\\machine learning_paper_138_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_139.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_139.txt",
+        "refs_path": "data\\references\\machine learning_paper_139_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_14.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_14.txt",
+        "refs_path": null
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_140.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_140.txt",
+        "refs_path": "data\\references\\machine learning_paper_140_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_141.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_141.txt",
+        "refs_path": "data\\references\\machine learning_paper_141_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_142.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_142.txt",
+        "refs_path": "data\\references\\machine learning_paper_142_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_143.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_143.txt",
+        "refs_path": "data\\references\\machine learning_paper_143_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_144.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_144.txt",
+        "refs_path": "data\\references\\machine learning_paper_144_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_145.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_145.txt",
+        "refs_path": "data\\references\\machine learning_paper_145_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_146.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_146.txt",
+        "refs_path": "data\\references\\machine learning_paper_146_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_147.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_147.txt",
+        "refs_path": "data\\references\\machine learning_paper_147_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_148.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_148.txt",
+        "refs_path": "data\\references\\machine learning_paper_148_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_149.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_149.txt",
+        "refs_path": "data\\references\\machine learning_paper_149_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_15.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_15.txt",
+        "refs_path": "data\\references\\machine learning_paper_15_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_150.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_150.txt",
+        "refs_path": "data\\references\\machine learning_paper_150_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_155.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_155.txt",
+        "refs_path": "data\\references\\machine learning_paper_155_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_157.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_157.txt",
+        "refs_path": "data\\references\\machine learning_paper_157_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_167.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_167.txt",
+        "refs_path": "data\\references\\machine learning_paper_167_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_17.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_17.txt",
+        "refs_path": "data\\references\\machine learning_paper_17_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_171.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_171.txt",
+        "refs_path": "data\\references\\machine learning_paper_171_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_172.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_172.txt",
+        "refs_path": "data\\references\\machine learning_paper_172_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_177.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_177.txt",
+        "refs_path": "data\\references\\machine learning_paper_177_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_178.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_178.txt",
+        "refs_path": "data\\references\\machine learning_paper_178_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_18.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_18.txt",
+        "refs_path": "data\\references\\machine learning_paper_18_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_180.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_180.txt",
+        "refs_path": "data\\references\\machine learning_paper_180_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_185.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_185.txt",
+        "refs_path": "data\\references\\machine learning_paper_185_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_188.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_188.txt",
+        "refs_path": "data\\references\\machine learning_paper_188_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_190.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_190.txt",
+        "refs_path": "data\\references\\machine learning_paper_190_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_193.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_193.txt",
+        "refs_path": "data\\references\\machine learning_paper_193_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_196.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_196.txt",
+        "refs_path": "data\\references\\machine learning_paper_196_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_199.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_199.txt",
+        "refs_path": "data\\references\\machine learning_paper_199_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_2.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_2.txt",
+        "refs_path": "data\\references\\machine learning_paper_2_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_20.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_20.txt",
+        "refs_path": "data\\references\\machine learning_paper_20_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_201.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_201.txt",
+        "refs_path": "data\\references\\machine learning_paper_201_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_203.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_203.txt",
+        "refs_path": "data\\references\\machine learning_paper_203_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_204.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_204.txt",
+        "refs_path": "data\\references\\machine learning_paper_204_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_207.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_207.txt",
+        "refs_path": "data\\references\\machine learning_paper_207_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_21.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_21.txt",
+        "refs_path": "data\\references\\machine learning_paper_21_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_210.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_210.txt",
+        "refs_path": "data\\references\\machine learning_paper_210_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_217.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_217.txt",
+        "refs_path": "data\\references\\machine learning_paper_217_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_218.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_218.txt",
+        "refs_path": "data\\references\\machine learning_paper_218_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_219.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_219.txt",
+        "refs_path": "data\\references\\machine learning_paper_219_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_22.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_22.txt",
+        "refs_path": "data\\references\\machine learning_paper_22_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_222.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_222.txt",
+        "refs_path": "data\\references\\machine learning_paper_222_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_228.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_228.txt",
+        "refs_path": "data\\references\\machine learning_paper_228_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_229.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_229.txt",
+        "refs_path": "data\\references\\machine learning_paper_229_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_23.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_23.txt",
+        "refs_path": "data\\references\\machine learning_paper_23_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_230.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_230.txt",
+        "refs_path": "data\\references\\machine learning_paper_230_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_233.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_233.txt",
+        "refs_path": "data\\references\\machine learning_paper_233_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_234.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_234.txt",
+        "refs_path": "data\\references\\machine learning_paper_234_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_238.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_238.txt",
+        "refs_path": "data\\references\\machine learning_paper_238_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_24.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_24.txt",
+        "refs_path": "data\\references\\machine learning_paper_24_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_249.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_249.txt",
+        "refs_path": "data\\references\\machine learning_paper_249_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_25.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_25.txt",
+        "refs_path": "data\\references\\machine learning_paper_25_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_257.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_257.txt",
+        "refs_path": null
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_258.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_258.txt",
+        "refs_path": "data\\references\\machine learning_paper_258_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_259.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_259.txt",
+        "refs_path": "data\\references\\machine learning_paper_259_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_26.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_26.txt",
+        "refs_path": "data\\references\\machine learning_paper_26_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_260.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_260.txt",
+        "refs_path": "data\\references\\machine learning_paper_260_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_261.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_261.txt",
+        "refs_path": "data\\references\\machine learning_paper_261_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_262.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_262.txt",
+        "refs_path": null
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_263.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_263.txt",
+        "refs_path": null
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_264.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_264.txt",
+        "refs_path": "data\\references\\machine learning_paper_264_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_267.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_267.txt",
+        "refs_path": "data\\references\\machine learning_paper_267_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_268.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_268.txt",
+        "refs_path": "data\\references\\machine learning_paper_268_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_27.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_27.txt",
+        "refs_path": "data\\references\\machine learning_paper_27_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_272.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_272.txt",
+        "refs_path": "data\\references\\machine learning_paper_272_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_276.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_276.txt",
+        "refs_path": "data\\references\\machine learning_paper_276_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_28.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_28.txt",
+        "refs_path": "data\\references\\machine learning_paper_28_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_29.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_29.txt",
+        "refs_path": "data\\references\\machine learning_paper_29_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_290.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_290.txt",
+        "refs_path": "data\\references\\machine learning_paper_290_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_298.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_298.txt",
+        "refs_path": "data\\references\\machine learning_paper_298_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_3.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_3.txt",
+        "refs_path": "data\\references\\machine learning_paper_3_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_30.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_30.txt",
+        "refs_path": "data\\references\\machine learning_paper_30_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_305.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_305.txt",
+        "refs_path": "data\\references\\machine learning_paper_305_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_31.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_31.txt",
+        "refs_path": "data\\references\\machine learning_paper_31_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_313.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_313.txt",
+        "refs_path": "data\\references\\machine learning_paper_313_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_32.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_32.txt",
+        "refs_path": "data\\references\\machine learning_paper_32_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_322.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_322.txt",
+        "refs_path": "data\\references\\machine learning_paper_322_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_326.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_326.txt",
+        "refs_path": "data\\references\\machine learning_paper_326_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_34.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_34.txt",
+        "refs_path": "data\\references\\machine learning_paper_34_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_341.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_341.txt",
+        "refs_path": "data\\references\\machine learning_paper_341_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_344.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_344.txt",
+        "refs_path": "data\\references\\machine learning_paper_344_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_346.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_346.txt",
+        "refs_path": "data\\references\\machine learning_paper_346_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_347.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_347.txt",
+        "refs_path": "data\\references\\machine learning_paper_347_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_349.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_349.txt",
+        "refs_path": "data\\references\\machine learning_paper_349_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_35.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_35.txt",
+        "refs_path": "data\\references\\machine learning_paper_35_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_351.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_351.txt",
+        "refs_path": "data\\references\\machine learning_paper_351_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_356.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_356.txt",
+        "refs_path": "data\\references\\machine learning_paper_356_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_357.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_357.txt",
+        "refs_path": "data\\references\\machine learning_paper_357_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_36.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_36.txt",
+        "refs_path": "data\\references\\machine learning_paper_36_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_365.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_365.txt",
+        "refs_path": "data\\references\\machine learning_paper_365_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_37.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_37.txt",
+        "refs_path": "data\\references\\machine learning_paper_37_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_378.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_378.txt",
+        "refs_path": "data\\references\\machine learning_paper_378_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_38.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_38.txt",
+        "refs_path": "data\\references\\machine learning_paper_38_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_384.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_384.txt",
+        "refs_path": null
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_385.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_385.txt",
+        "refs_path": "data\\references\\machine learning_paper_385_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_39.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_39.txt",
+        "refs_path": "data\\references\\machine learning_paper_39_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_4.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_4.txt",
+        "refs_path": "data\\references\\machine learning_paper_4_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_40.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_40.txt",
+        "refs_path": "data\\references\\machine learning_paper_40_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_41.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_41.txt",
+        "refs_path": "data\\references\\machine learning_paper_41_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_42.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_42.txt",
+        "refs_path": "data\\references\\machine learning_paper_42_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_43.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_43.txt",
+        "refs_path": "data\\references\\machine learning_paper_43_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_44.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_44.txt",
+        "refs_path": "data\\references\\machine learning_paper_44_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_45.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_45.txt",
+        "refs_path": "data\\references\\machine learning_paper_45_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_46.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_46.txt",
+        "refs_path": "data\\references\\machine learning_paper_46_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_47.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_47.txt",
+        "refs_path": "data\\references\\machine learning_paper_47_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_48.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_48.txt",
+        "refs_path": "data\\references\\machine learning_paper_48_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_49.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_49.txt",
+        "refs_path": "data\\references\\machine learning_paper_49_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_5.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_5.txt",
+        "refs_path": "data\\references\\machine learning_paper_5_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_50.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_50.txt",
+        "refs_path": "data\\references\\machine learning_paper_50_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_51.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_51.txt",
+        "refs_path": "data\\references\\machine learning_paper_51_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_52.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_52.txt",
+        "refs_path": "data\\references\\machine learning_paper_52_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_53.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_53.txt",
+        "refs_path": "data\\references\\machine learning_paper_53_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_54.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_54.txt",
+        "refs_path": "data\\references\\machine learning_paper_54_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_55.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_55.txt",
+        "refs_path": "data\\references\\machine learning_paper_55_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_56.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_56.txt",
+        "refs_path": "data\\references\\machine learning_paper_56_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_57.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_57.txt",
+        "refs_path": "data\\references\\machine learning_paper_57_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_58.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_58.txt",
+        "refs_path": "data\\references\\machine learning_paper_58_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_59.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_59.txt",
+        "refs_path": "data\\references\\machine learning_paper_59_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_6.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_6.txt",
+        "refs_path": "data\\references\\machine learning_paper_6_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_60.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_60.txt",
+        "refs_path": "data\\references\\machine learning_paper_60_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_61.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_61.txt",
+        "refs_path": "data\\references\\machine learning_paper_61_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_62.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_62.txt",
+        "refs_path": "data\\references\\machine learning_paper_62_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_63.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_63.txt",
+        "refs_path": "data\\references\\machine learning_paper_63_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_64.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_64.txt",
+        "refs_path": "data\\references\\machine learning_paper_64_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_65.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_65.txt",
+        "refs_path": "data\\references\\machine learning_paper_65_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_66.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_66.txt",
+        "refs_path": "data\\references\\machine learning_paper_66_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_67.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_67.txt",
+        "refs_path": "data\\references\\machine learning_paper_67_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_68.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_68.txt",
+        "refs_path": "data\\references\\machine learning_paper_68_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_69.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_69.txt",
+        "refs_path": "data\\references\\machine learning_paper_69_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_7.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_7.txt",
+        "refs_path": "data\\references\\machine learning_paper_7_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_70.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_70.txt",
+        "refs_path": "data\\references\\machine learning_paper_70_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_71.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_71.txt",
+        "refs_path": "data\\references\\machine learning_paper_71_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_72.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_72.txt",
+        "refs_path": "data\\references\\machine learning_paper_72_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_73.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_73.txt",
+        "refs_path": "data\\references\\machine learning_paper_73_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_74.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_74.txt",
+        "refs_path": "data\\references\\machine learning_paper_74_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_75.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_75.txt",
+        "refs_path": "data\\references\\machine learning_paper_75_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_76.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_76.txt",
+        "refs_path": "data\\references\\machine learning_paper_76_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_77.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_77.txt",
+        "refs_path": "data\\references\\machine learning_paper_77_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_78.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_78.txt",
+        "refs_path": "data\\references\\machine learning_paper_78_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_79.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_79.txt",
+        "refs_path": "data\\references\\machine learning_paper_79_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_8.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_8.txt",
+        "refs_path": "data\\references\\machine learning_paper_8_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_80.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_80.txt",
+        "refs_path": "data\\references\\machine learning_paper_80_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_81.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_81.txt",
+        "refs_path": "data\\references\\machine learning_paper_81_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_82.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_82.txt",
+        "refs_path": "data\\references\\machine learning_paper_82_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_83.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_83.txt",
+        "refs_path": "data\\references\\machine learning_paper_83_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_84.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_84.txt",
+        "refs_path": "data\\references\\machine learning_paper_84_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_85.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_85.txt",
+        "refs_path": "data\\references\\machine learning_paper_85_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_86.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_86.txt",
+        "refs_path": "data\\references\\machine learning_paper_86_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_87.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_87.txt",
+        "refs_path": "data\\references\\machine learning_paper_87_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_88.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_88.txt",
+        "refs_path": "data\\references\\machine learning_paper_88_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_89.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_89.txt",
+        "refs_path": "data\\references\\machine learning_paper_89_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_9.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_9.txt",
+        "refs_path": "data\\references\\machine learning_paper_9_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_90.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_90.txt",
+        "refs_path": "data\\references\\machine learning_paper_90_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_91.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_91.txt",
+        "refs_path": "data\\references\\machine learning_paper_91_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_92.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_92.txt",
+        "refs_path": "data\\references\\machine learning_paper_92_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_93.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_93.txt",
+        "refs_path": "data\\references\\machine learning_paper_93_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_94.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_94.txt",
+        "refs_path": "data\\references\\machine learning_paper_94_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_95.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_95.txt",
+        "refs_path": "data\\references\\machine learning_paper_95_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_96.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_96.txt",
+        "refs_path": "data\\references\\machine learning_paper_96_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_97.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_97.txt",
+        "refs_path": "data\\references\\machine learning_paper_97_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_98.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_98.txt",
+        "refs_path": "data\\references\\machine learning_paper_98_refs.xml"
+    },
+    {
+        "topic": "machine learning",
+        "pdf_path": "data\\pdfs\\machine learning_paper_99.pdf",
+        "text_path": "data\\parsed_text\\machine learning_paper_99.txt",
+        "refs_path": "data\\references\\machine learning_paper_99_refs.xml"
+    }
+]
