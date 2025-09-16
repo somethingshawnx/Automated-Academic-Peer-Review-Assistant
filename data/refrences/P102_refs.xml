@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Sentiment Analysis on Twitter by Using TextBlob for Natural Language Processing</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>PTI</publisher>
+				<availability status="unknown"><p>Copyright PTI</p>
+				</availability>
+				<date type="published" when="2020-01-20">2020-01-20</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Ditiman</forename><surname>Hazarika</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computing Sciences(IT)</orgName>
+								<orgName type="institution">The Assam Kaziranga University</orgName>
+								<address>
+									<settlement>Jorhat</settlement>
+									<region>Assam</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Gopal</forename><surname>Konwar</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computing Sciences(IT)</orgName>
+								<orgName type="institution">The Assam Kaziranga University</orgName>
+								<address>
+									<settlement>Jorhat</settlement>
+									<region>Assam</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Shuvam</forename><surname>Deb</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computing Sciences(IT)</orgName>
+								<orgName type="institution">The Assam Kaziranga University</orgName>
+								<address>
+									<settlement>Jorhat</settlement>
+									<region>Assam</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Dibya</forename><forename type="middle">Jyoti</forename><surname>Bora</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">School of Computing Sciences(IT)</orgName>
+								<orgName type="institution">The Assam Kaziranga University Jorhat</orgName>
+								<address>
+									<settlement>Assam</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Sentiment Analysis on Twitter by Using TextBlob for Natural Language Processing</title>
+					</analytic>
+					<monogr>
+						<title level="m">Annals of Computer Science and Information Systems</title>
+						<idno type="ISSN">2300-5963</idno>
+						<imprint>
+							<publisher>PTI</publisher>
+							<biblScope unit="volume">24</biblScope>
+							<biblScope unit="page" from="63" to="67"/>
+							<date type="published" when="2020-01-20" />
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.15439/2020km20</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.2" ident="GROBID" when="2025-09-12T10:44+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>sentiment</term>
+					<term>opinion</term>
+					<term>polarity</term>
+					<term>classification techniques</term>
+					<term>TextBlob</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The Internet has become an innovative platform regarding online learning, exchanging content, sharing views. In this paper, we will use Twitter as our social networking platform. Sentiment analysis on Twitter is based on opinion mining on posts to obtain the user's point of view. The leading goal deals with how opinion mining techniques can be accessed to analyze some of the tweets in many reports involving various types of tweet languages on Twitter and classify its polarity. Practical implication shows that the proposed machine learning classifiers are efficient and highly accurate.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>ENTIMENT analysis, one of the key emerging technologies provides people the freedom to analyze a huge amount of user-generated content available on the web <ref type="bibr" target="#b2">[6]</ref>. Sentiment analysis is a type of NLP tool for tracking the mood of the public about a specific product or service. It deals with constructing a system to gather and analyze reviews about a certain product <ref type="bibr" target="#b0">[4]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>S Few fields of research involve:- Sentiment classification:</head><p>Handles the classification of complete documents based on opinions towards a particular object.  Opinion Summarization:</p><p>In this task, only the important characteristics of the product are extracted on which the customers have given their viewpoints.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. CHALLENGES IN SENTIMENT ANALYSIS</head><p>Some of the issues faced by sentiment analysis are:- A word having positive and negative sentiment has opposite orientations in various application domains. E.g. -"This movie sucks" implies a different meaning compared to "This vacuum cleaner really sucks''.  Words with or without sentiment in certain sarcastic sentences are hard to examine.  Sometimes words in a sentence without sentiment simply opinion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. SENTIMENT ANALYSIS TASKS</head><p>The collected tweets are pre-processed for performing the data cleaning. By using any feature selection methods important features are taken out from the clean text.</p><p>The data is divided, manually labeled as negative, positive &amp; neutral Tweets for building a training set.</p><p>Features extracted and the training set labeled are given as an input to the classifier built for creating the test set <ref type="bibr" target="#b0">[4]</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Data Sources</head><p>Opinion mining plays a major role in selecting the data sources. Twitter, a micro-blogging, social networking site with fixed content size and generally accessible information has to gain lots of popularity [3].</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Methods for collecting Tweets</head><p>The tweets for research can be collected by following methods given below - Compress extra letter words like 'Funnyyy' to 'Funny'. Slag words like c8, g9 are decompressed which are adjectives or nouns signifying the highest sentiment level. Removal of these words is essential.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Feature Extraction</head><p>-It involves the extraction of various aspects like adjectives, verbs, nouns which are identified as positive or negative to detect the polarity of the whole sentence. Some popular methods of Feature extraction are-1) Terms Frequency and Presence: Individual and unique words and counting of their repetition are given these features. 2) Negative Phrases: Negative words changes meaning or orientation regarding a particular opinion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>3)</head><p>Parts Of Speech (POS): Nouns, adjectives, verbs, etc. are founded as they are the important figures of thoughts. Those stop words, do not add any value to the analysis part. Words as 'a', 'is', 'was', 'the'; do not indicate any sentiment. Example-From the above Statement "The movie was great." "The", "was" is removed. • Classification-The step classifies where the statement is positive, negative, or neutral. For positive words, we assign sentiment scores as "+1", for the negative words we assign "-1", and for neutral "0". Example-From the above Statement "The movie was great." movie -0 great -1</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. Techniques related to Sentiment Classification</head><p>• Apply supervised Algorithm for Classification -This is the part where we train our model with a bag of words or lexicons and test it on the analysis statement. Once the model has been trained, we can perform a test on the analysis statement to test its accuracy for classification. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>V. FEATURE IMPLEMENTATION</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. A Twitter developer account</head><p>To access the Twitter API, we will need to sign up for the Twitter Developer website and then perform some steps for the creation of an application.</p><p>After complete approval, an access token is generated and we will have our Consumer Secret key, consumer key, Access token secret &amp; Access token from the Keys and Access Tokens tab. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Anaconda navigator Installation</head><p>-It is a GUI that launches applications, manages conda packages, environments &amp; channels without the need for accessing command-line commands.</p><p>-We can access the following applications through the navigator:</p><p>Jupyter Lab, Jupyter Notebook, Spyder, Pycharm. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Installing Python Libraries</head><p>Python library is a collection of core modules that contains a reusable chunk of code that can be used subsequently.</p><p>The Following are some important libraries that we will be using in our project.</p><p>• TextBlob :</p><p>TextBlob, a Python library which deals with textual information which gives a simple API for accessing NLP activity like Noun Phrase extraction, PoS tagging, sentiment analysis, etc.</p><p>-Install TextBlob: It can be installed by the following command through the anaconda prompt.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Features of TextBlob:</head><p>1) Tokenization: It involves a large division of a large paragraph into words and phrases. A token simply means a word. Initially, we import the TextBlob object, TextBlob module &amp; pass it the sentence for tokenization.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2) Lemmatization:</head><p>It refers to the tracing of a word to its origin as given in a dictionary. For using it through TextBlob, we need to access the Word object from the TextBlob module, pass the word &amp; call the lemmatize method. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Example-</head><p>We perform lemmatization on the words "apples", "media", and "greater". In output get "apple", "medium" and "great".</p><p>3) Part of Speech tagging It is the process of identifying the structural elements of a text document, such as verbs, nouns, adjectives, and adverbs.</p><p>Example-The interface for using the PoS tagging feature.</p><p>Fig . <ref type="figure">6</ref>.TextBlob implementation Source: https://www.analyticsvidhya.com/blog/naturallanguage-processing-for-beginners-using-textblob 4) Noun Phrase Extraction It involves the extraction of phrases from a given context that contains nouns.</p><p>Let's understand this feature with the following example.</p><p>The output will give all the nouns in the document. computer science artificial intelligence AI machine intelligence</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>5) Tweepy</head><p>An open-source repository on python for communicating with the Twitter platform and use its API.</p><p>Tweepy has many features like: 1. Get tweets.</p><p>2. Make and delete tweets.</p><p>3. Follow and unfollow users.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VI. RESEARCH SCOPE IN OPINION MINING</head><p>AND SENTIMENT ANALYSIS The main areas for future sentiment analysis are:</p><p>• Spam Detection Sentiment;</p><p>• Sentiment Analysis on short Sentence like short text;</p><p>• Improvement in sentiment word identification;</p><p>• Development of the automatic analyzing tool;</p><p>• Accurate Analysis of policy-related content;</p><p>• Proper classification of bipolar sentiments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VII. LIMITATIONS</head><p>The major limitations related to Sentiment analysis or opinion mining are as follows:- Spam and fake reviews detection -The spam contents on the web can be removed by identifying duplicates, removing outliers &amp; consider the reputation of the reviewer.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head> Classification Filtering limitation-</head><p>There is a limitation in determining popular thought or concept. For better sentiment analysis this limitation needs to be reduced.  Availability of opinion mining software-Great quality Opinion mining software -very expensive and only can be afforded by big organizations and government.  Domain Independence-The sentiment words are domain-dependent i.e. good performance of one feature set in one domain but at the same time, it may perform very poorly in another domain.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VIII. CONCLUSIONS</head><p>Sentiment analysis or opinion mining covers a wide area of real-time applications, meanwhile, it has suffered from many research limitations.</p><p>Since the fast growth of the internet and internet-related applications, Sentiment Analysis becomes the most interesting research area among the natural language processing community. In this research paper, we have analyzed the from textblob import Text text1 = Text("oranges") print("oranges:", text1.lemmatize()) text2 = Text("radii") print("radii:", text2.lemmatize()) text3 = Text("smaller") print("smaller:", text3.lemmatize())</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. Steps in sentiment analysisSource: www.quora.com</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>For identification of text, two techniques are used which are given below-• Technique based on knowledge (Lexicon based technique) -It relies on extracting the opinion-based lexicons from the text and then the polarity of those lexicons is identified. • Machine Learning -The major objective of this method is to develop an algorithm for optimizing performance by using training data like examples, past knowledge &amp; experiences. This method provides the solution in two steps [5]: 1) The model is developed and trained using already labeled data. 2) Dividing of data into unlabeled or unclassified, which is based on the trained model. Supervised and unsupervised techniques are two broad categories of ML techniques. Subjective data is used for supervised machine learning techniques which especially depend upon labeled training data. Textblob will be used in our project. IV. PROJECT DESIGN A. Flow diagram Figure 2. B. Steps involved • Tokenization-Dividing a paragraph into different types of a statement or dividing a statement into different types of words. Example-Let us say a simple statement "The movie was great." *The *movie *was *great *. (After tokenization) • Cleaning the Data -It involves removing special characters or any other words which do not add any value to the analysis part. Punctuations like the comma, full stop, exclamation are removed. Example-From the above Statement "The movie was great." . (Full stop) is removed. • Removing the stop words -Remove all</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. Flow diagram of our project</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 3 .Fig. 4 .</head><label>34</label><figDesc>Fig. 3. Twitter Developer interface. Source: https://docs.inboundnow.com/guide/create-twitter-application</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 5 .</head><label>5</label><figDesc>Fig. 5. Anaconda Navigator interface Source: Project handling device</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head></head><label></label><figDesc>pip install -U textblob DITIMAN HAZARIKA ET AL.: SENTIMENT ANALYSIS ON TWITTER BY USING TEXTBLOB</figDesc></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="66">PROCEEDINGS OF ICRMAT. NAGPUR, 2020</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot">DITIMAN HAZARIKA ET AL.: SENTIMENT ANALYSIS ON TWITTER BY USING TEXTBLOB</note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>sentiment on the Tweets, extracted from Twitter and classify them according to their polarities.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Sentiment analysis of Twitter Data</title>
+		<author>
+			<persName><forename type="first">Sanjana</forename><surname>Kiruthika</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Giri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Innovation in Engineering and Technology</title>
+		<imprint>
+			<biblScope unit="issue">6</biblScope>
+			<date type="published" when="2016-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Techniques for sentiment analysis of Twitter data: A comprehensive survey</title>
+		<author>
+			<persName><forename type="first">Mitali</forename><surname>Desai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mayuri</forename><forename type="middle">A</forename><surname>Mehta</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ccaa.2016.7813707</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2016 International Conference on Computing, Communication and Automation (ICCCA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-04" />
+			<biblScope unit="page" from="149" to="154" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Sentiment Analysis: An analysis on its past, present and future scope</title>
+		<author>
+			<persName><surname>Sanjeev Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Sharma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of advanced research in Science and Engineering</title>
+		<imprint>
+			<biblScope unit="issue">6</biblScope>
+			<date type="published" when="2017-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

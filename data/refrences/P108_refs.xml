@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">An automated essay evaluation system using natural language processing and sentiment analysi</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Institute of Advanced Engineering and Science</publisher>
+				<availability status="unknown"><p>Copyright Institute of Advanced Engineering and Science</p>
+				</availability>
+				<date type="published" when="2022-12-01">2022-12-01</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Vijaya</forename><forename type="middle">Shetty</forename><surname>Sadanand</surname></persName>
+							<idno type="ORCID">0000-0001-8063-246X</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Kadagathur</forename><forename type="middle">Raghavendra Rao</forename><surname>Guruvyas</surname></persName>
+							<idno type="ORCID">0000-0001-5163-6461</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Pranav</forename><forename type="middle">Prashantha</forename><surname>Patil</surname></persName>
+							<idno type="ORCID">0000-0003-2453-7737</idno>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Computer Science and Engineering</orgName>
+								<orgName type="institution">Nitte Meenakshi Institute of Technology</orgName>
+								<address>
+									<settlement>Bengaluru</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jeevan</forename><surname>Janardhan Acharya</surname></persName>
+							<idno type="ORCID">0000-0001-5821-3736</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Sharvani</forename><surname>Gunakimath Suryakanth</surname></persName>
+							<idno type="ORCID">0000-0002-5702-1027</idno>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">Department of Computer Science and Engineering, Nitte Meenakshi Institute of Technology Bengaluru-560064</orgName>
+								<address>
+									<region>Karnataka</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">An automated essay evaluation system using natural language processing and sentiment analysi</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">International Journal of Electrical and Computer Engineering (IJECE)</title>
+						<title level="j" type="abbrev">IJECE</title>
+						<idno type="ISSN">2088-8708</idno>
+						<idno type="eISSN">2722-2578</idno>
+						<imprint>
+							<publisher>Institute of Advanced Engineering and Science</publisher>
+							<biblScope unit="volume">12</biblScope>
+							<biblScope unit="issue">6</biblScope>
+							<biblScope unit="page">6585</biblScope>
+							<date type="published" when="2022-12-01" />
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.11591/ijece.v12i6.pp6585-6593</idno>
+					<note type="submission">Received Sep 3, 2021 Revised Jul 23, 2022 Accepted Aug 18, 2022</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.2" ident="GROBID" when="2025-09-12T10:45+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Essay scoring Long short-term memory Natural language processing Plagiarism check Sentiment analyzer</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>An automated essay evaluation system is a machine-based approach leveraging long short-term memory (LSTM) model to award grades to essays written in English language. natural language processing (NLP) is used to extract feature representations from the essays. The LSTM network learns from the extracted features and generates parameters for testing and validation. The main objectives of the research include proposing and training an LSTM model using a dataset of manually graded essays with scores. Sentiment analysis is performed to determine the sentiment of the essay as either positive, negative or neutral. The twitter sample dataset is used to build sentiment classifier that analyzes the sentiment based on the student's approach towards a topic. Additionally, each essay is subjected to detection of syntactical errors as well as plagiarism check to detect the novelty of the essay. The overall grade is calculated based on the quality of the essay, the number of syntactic errors, the percentage of plagiarism found and sentiment of the essay. The corrected essay is provided as feedback to the students. This essay grading model has gained an average quadratic weighted kappa (QWK) score of 0.911 with 99.4% accuracy for the sentiment analysis classifier.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">INTRODUCTION</head><p>In recent years, there has been a surge in the growth of internet-related technology. Because of the advanced methods by which students learn, prepare, and undergo the examination, online exams have gained significant importance in educational institutions <ref type="bibr" target="#b0">[1]</ref>. In today's world, not only examiners but also computers such as automatic essay evaluation are used to mark essays, since manual grading is time-consuming and prone to inconsistency and errors. In applications that perform automatic essay grading, the latent semantic analysis is used as a data reclaim tool <ref type="bibr" target="#b1">[2]</ref>- <ref type="bibr" target="#b4">[5]</ref>. This automated essay evaluation system grades essays on a scale of 1-10 and eliminates the time-consuming process of manually grading the essays. The system can perform anytime grading of essays unlike the manual grading process which is normally performed during the working hours of the evaluator <ref type="bibr" target="#b5">[6]</ref>, <ref type="bibr" target="#b6">[7]</ref>.</p><p>Sentiment analysis, also known as sentiment or polarity classification analyzes student's opinion from the essay for the provided topic <ref type="bibr" target="#b7">[8]</ref>. The polarity can either be positive, negative or neutral. His system performs grading of essays based on the features extracted from the essay using natural language processing (NLP) <ref type="bibr" target="#b8">[9]</ref>. The machine learning model leverages long short-term memory (LSTM) network to extract  ISSN: 2088-8708 Int J Elec &amp; Comp Eng, Vol. 12, No. 6, December 2022: 6585-6593 6586 features from the submitted essay. The extracted features are used to further create feature vectors to judge the quality of the essay using LSTM model. The syntactic errors are detected using the language tool which includes the grammatical and spelling mistakes performed by the student in the essay. The system also checks for the novelty of the essay through a plagiarism check using Bing search from various web sources. A naïve Bayes classifier is used to build the sentiment classifier <ref type="bibr" target="#b9">[10]</ref>.</p><p>The quality of the essay is graded on a scale of 3, the marks for syntactic errors and plagiarism percentage is deducted from a scale of 3 each. If the sentiment of the essay does not agree with the expected sentiment for the topic provided, 1 mark is deducted from the total score. Based on the syntactic errors detected, the essay is modified and the corrected essay without any errors is provided to the student and the detected errors are accompanied with the type of the error, and an example as part of the feedback to the students.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">RESEARCH METHOD</head><p>The proposed automated essay scoring system uses NLP and sentiment analysis for prediction of grades and to comment on the student's approach towards a topic respectively. The pandas package is used to read the training dataset into a data frame. The irrelevant columns of the data frame are dropped off to ease the process of training <ref type="bibr" target="#b10">[11]</ref>- <ref type="bibr" target="#b12">[13]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Dataset for automatic essay grading system</head><p>The dataset used is collected from a platform related to data science called Kaggle. The dataset is provided by the Hewlett Foundation. It contains 12,000 essays written by students belonging from 7 th to 10 th grade. Each essay is classified into one of the 8 sets where each set contains essays written for a specific topic. Each essay is evaluated by two manual evaluators.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Dataset for sentiment analysis</head><p>A twitter dataset is gathered by utilizing the twitter API, furthermore, the information is commented as either positive or negative tweets. The dataset is openly accessible in the natural language toolkit (NLTK) corpora resource, widely investigated in numerous examinations. The complete corpus size is 10,000 tweets, comprising of 5,000 positive posts and 5,000 negative posts. We accumulated and arranged informational indexes as 7,000 tweets for training the model and 3,000 tweets for validating the model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Building a model</head><p>The LSTM model was found suitable for this application <ref type="bibr" target="#b13">[14]</ref>. A sequential neural network model is defined consisting of two LSTM layers, a dropout layer with a dropout rate of 0.5 and a densely connected layer using rectified linear unit (ReLU) activation function with a single output neuron. The defined model is compiled using mean squared error loss function, RMSprop optimizer and accuracy as the evaluation metric. The model is trained using K fold process for 5 folds using the training dataset. Language tool is used to detect grammar, spelling and syntactic errors in the submitted essay. Plagiarism check is performed on the essay by referring to the websites with similar content and a percentage score is provided indicating the amount of plagiarized content from each detected website.</p><p>The architecture design of the system is shown in Figure <ref type="figure">1</ref>. It shows a high-level view of the working of the system. The teacher posts a topic and the student submits the essay to the essay evaluator which is further subjected to feature extraction, sentiment analysis and plagiarism check to generate grades accordingly.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Sentimental analysis</head><p>To detect the sentiment of the submitted essay, a naïve bayes classifier is built. The classifier is trained on the twitter dataset that contains about 10,000 tweet samples categorized as positive or negative accordingly. Randomly shuffled 7,000 tweets are used for training purpose and the remaining 3,000 for testing the classifier. Figure <ref type="figure">2</ref> shows the flow of sentiment analysis. It takes the twitter dataset as an input parameter and produces a sentiment classifier that is capable of classifying an essay as having either positive or negative sentiment <ref type="bibr" target="#b14">[15]</ref>, <ref type="bibr" target="#b15">[16]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5.">Plagiarism detection</head><p>This phase determines if the student has copied information from any web sources and lists the uniform resource locator (URL) links of the websites along with the amount of plagiarism detected from each of them and also the total percentage of plagiarism. This process consists of determining the websites with relevant content and calculating the amount of similarity between the submitted essay and the text in the Int J Elec &amp; Comp Eng ISSN: 2088-8708  An automated essay evaluation system using natural language processing and … (Vijaya Shetty Sadanand)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>6587</head><p>website <ref type="bibr" target="#b16">[17]</ref>. The algorithm takes an essay as input and provides a dictionary as output with plagiarized URL as the key and the plagiarism percentage as the value <ref type="bibr" target="#b17">[18]</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.6.">Essay grading</head><p>In this phase the essay submitted by the student is pre-processed by removing stop words and converting the essay from word to vector format. Spelling mistakes and the grammatical errors are detected using the python language tool and the detailed description of each grammatical and spelling error is notified to the student. It first loads the saved Word2Vec model followed by the creation of a word list, an average input feature vector and finally reshapes the submitted essay. It detects the syntactic errors in that essay and appropriately removes the noise from it. It then obtains the result of sentiment analysis followed by the total plagiarism percentage and awards the final marks accordingly <ref type="bibr" target="#b18">[19]</ref>, <ref type="bibr" target="#b19">[20]</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.7.">Generating the corrected essay</head><p>In this stage the input essay is checked and all the spelling mistakes, linguistic mistakes and grammatical errors are remedied giving the rethought and amended essay to the student. It first checks the syntactical mistakes in the essay and if it finds any it replaces that mistake with its appropriate correction. Then it creates a new string of text based on the values in the list and the corrected list by joining them <ref type="bibr" target="#b19">[20]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.8.">User interfaces</head><p>The teachers and the students, both have their separate online interfaces. Initially they have to create their respective accounts by signing up with their details such as name, mobile number, email address and password. They can use the registered email address and password as login credentials in the future. Each teacher has a dashboard with the following three tabs: view profile tab to view their personal information, create test tab to create a test by mentioning the topic of the essay, the duration of the test and the expected sentiment as either positive, negative or neutral and the view results tab to view the score of each individual student identified with their respective email addresses. Similarly, each student has a dashboard with the following three tabs: view profile tab to view their personal information, take test tab to attempt a test by writing an essay corresponding to the provided topic the topic and submit it accordingly and a view results tab to view their scores and feedback.</p><p>Algorithm 1 shows the proposed algorithm. Algorithm loads the saved Word2Vec model <ref type="bibr" target="#b19">[20]</ref>, then it creates the word list, average input feature and reshapes the submitted essay. It then detects the syntactic errors in that essay and removes the noise from it. It then obtains the sentimental analysis and calculates the total plagiarism and deducts marks accordingly. The overall grade is calculated based on the quality of the essay through feature extraction, the number of syntactic errors, the percentage of plagiarism found and sentiment of the essay <ref type="bibr" target="#b20">[21]</ref>. marks=marks; 13: Else If total plagiarism is between 15 to 25% then 14: marks=marks-0.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Algorithm 1. Essay grading</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">RESULTS AND DISCUSSION</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Kappa evaluation</head><p>The main criteria for evaluating automated essay grading systems (AEGS) is the kappa score, there are two kinds of kappa, linear weighted kappa (LWK) and quadratic weighted kappa (QWK) <ref type="bibr" target="#b20">[21]</ref>, <ref type="bibr" target="#b21">[22]</ref>. These are the error matrices which estimate the extent of similarity between two grades.</p><formula xml:id="formula_0">= − 1− (1) = 1 − 1− 1− (2)</formula><p>In ( <ref type="formula">1</ref>) and (2) Xo is the original consistency rate and Xe is the theoretical consistency rate. Xo can be determined by dividing the number of correct groupings for each class with the total number. The kappa score generally lies between 0 and 1. Table <ref type="table" target="#tab_2">1</ref> shows the physical representations of various kappa values. If the metric is below 0, it indicates that there is less agreement between the raters. The QWK is computed between the automatically generated score and the resolved score of human raters on each set of essays <ref type="bibr" target="#b20">[21]</ref>, <ref type="bibr" target="#b21">[22]</ref>. The QWK is expressed as <ref type="bibr" target="#b2">(3)</ref>. </p><formula xml:id="formula_1">, = ( − ) 2 ( −1) 2 (3)</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Naïve Bayes classification evaluation</head><p>Multinomial naïve Bayes grouping calculation remains a standard solution to perform sentiment analysis. The essential thought of naïve Bayes strategy is to discover the probabilities of categories related to messages by utilizing the joint probabilities of classes and words. It is given by <ref type="bibr" target="#b3">(4)</ref>.</p><formula xml:id="formula_2">( | ) = ( | ) ( ) ( )<label>(4)</label></formula><p>In ( <ref type="formula" target="#formula_2">4</ref>), ( | ) is the prosterior probability of class ( ) given predicator ( ), ( ) is the prior probability of the class, ( ) is the prior probability of the predicator and ( | ) is the likelihood which is the probability of predicator for the given class. The dependent feature vector (x1 ,x2 ,……,xn ) and the class Y being given. Bayes' theorem is expressed in mathematical form as <ref type="bibr" target="#b4">(5)</ref>.</p><formula xml:id="formula_3">( | 1 , … , ) = ( 1 , … , | ) ( ) ( 1 ,…, )<label>(5)</label></formula><p>As per the "Naïve" conditional independence assumption, for the provided class Ck each element of vector xi is restrictively autonomous of each and every other component xj for i≠j.</p><formula xml:id="formula_4">( | , 1 , … , ) = ( | )<label>(6)</label></formula><p>The simplified relation is stated as <ref type="bibr" target="#b6">(7)</ref>.</p><formula xml:id="formula_5">( | 1 , … , ) = ( ) ∏ ( | ) =1 ( 1 ,…, )<label>(7)</label></formula><p>Since ( | 1 , … , ) is constant and if the feature variable values are known the classification is written as ( <ref type="formula" target="#formula_6">8</ref>), ( <ref type="formula" target="#formula_7">9</ref>), </p><formula xml:id="formula_6">( | 1 , … , ) = ( ) ∏ ( | ) =1<label>(8)</label></formula><p>The various forms of naive Bayes classifiers differ from each other based on the assumptions they make related to the distribution of ( | ). Where ( ) is generally defined to be the relative frequency of class in the training dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Experiment setup</head><p>LSTM organizations-are considered to be an extraordinary form of recurrent neural network (RNN), used for learning large haul dependencies. Remembering data for considerable stretches of time is essentially their importance. All RNNs possess a type of chain of rehashing modules of neural network. In regular RNNs, this rehashing module has an exceptionally basic design, for example, a solitary tanh layer <ref type="bibr" target="#b22">[23]</ref>.</p><formula xml:id="formula_8">= ( −1 , )<label>(10)</label></formula><p>Where yt and zt depict the input vectors at the time t. The LSTM model is expressed in terms of input, output and forget gates, that controls the flow of information within the recursive operation <ref type="bibr" target="#b22">[23]</ref>. The function of LSTM model is expressed in the ( <ref type="formula">11</ref>)-( <ref type="formula" target="#formula_10">16</ref>) <ref type="bibr" target="#b23">[24]</ref>,</p><formula xml:id="formula_9">= ( • + • −1 + ) (11) = ( • + • −1 + ) (12) = ℎ( • + • −1 + )<label>(13)</label></formula><formula xml:id="formula_10">= • + • −1 (14) = ( • + • −1 + ) (15) = • tanh( )<label>(16)</label></formula><p>In ( <ref type="formula" target="#formula_8">10</ref>)-( <ref type="formula" target="#formula_10">16</ref>) input gate , output gate , memory cell , forget gate , and hidden state is needed. Furthermore, each of variable is weighted the input vector , , and are weight matrices and bias vector parameter. Moreover, also used sigmoid function , tanh function tanh. At each time step t, LSTM produces a hidden vector output that affects the semantic representation of the essay residing at position t. The ultimate representation of the essay is again subjected to feature extraction in the self-information layer. We have trained two models for predicting grades and to perform sentiment analysis for an essay submission. The grade prediction model was trained on 12,000 essays belonging to 8 different contexts with each essay having manual grades graded by two teachers. The sentiment analysis model was trained on twitter dataset containing positive and negative samples of data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Result</head><p>LSTM model was developed utilizing TensorFlow and wrapped with Python library <ref type="bibr" target="#b24">[25]</ref>. The automatic essay grading system is fabricated utilizing LSTM model and after training the model using K-fold strategy for 5 folds with 10 epochs each it gained a quadratic weighted kappa score of 0.911. Figure <ref type="figure" target="#fig_3">3</ref> shows the quadratic weight kappa score in each fold.</p><p>We can estimate that overall system yields extremely good results for sentiment analysis, grading the essay, plagiarism detection and generating corrected essay. Grades for the essays is provided out of 10 by considering sentiment analysis, plagiarism check and syntactic errors. Essay provided as input to the essay grading model. Once the essay is submitted, it is subjected to the detection of syntactic mistakes such as spelling and grammatical errors. The essay is then checked for plagiarism. If plagiarism is found, the plagiarized URL along with the corresponding plagiarism percentage is retrieved. It also gives the total plagiarism percentage that is necessary to award the final grade. Now, the essay is subjected to sentiment analysis with the help of the classifier. The expected sentiment and the detected sentiment are compared and marks are deducted if they are not identical. Based on these parameters a final grade along with a comment is provided to the student. As a part of feedback, the students are also provided with the corrected essay. It is the essay written by the student, but without any errors. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">CONCLUSION</head><p>In this paper, we have presented a model that uses NLP and machine learning to help educational institutions award grades to students based on their essay submissions to produce much accurate and unbiased results with less time consumption. Based on their advantages such models are thought to have a great potential in the future in various fields. This system leverages an LSTM network model. The model was trained with nearly 12,000 essays where each essay was graded by two manual graders. It was trained using K-fold mechanism for 5 folds and each fold operating for 10 epochs each with a batch size of 64. The model was then evaluated using QWK metric that depicted an average score of 0.911. A naïve bayes classifier was employed to build a sentiment classifier to determine either the positive or negative approach of students towards a topic. This classifier showed an accuracy of 99.4%. Along with which the system also detects syntactic errors in the essay such as spelling or grammatical mistakes and provides detailed feedback regarding the same to the students for further corrections.</p><p>A plagiarism detector was built to determine if the student has plagiarized any content from the open web sources. If so, the plagiarized URL along with the percentage of plagiarism is depicted. All the above parameters that include number of syntactic mistakes, amount of plagiarism, and the quality of the essay are considered to award the final grade to the student. As a part of maintenance and to improve the performance of the model further gradually, each essay submitted to the essay scoring system is appended to the dataset and the model will be trained on a periodic basis. This would further enhance the accuracy and reliability of the system. Future scope of this system involves exploring much enhanced characteristics to improve the results and make the system more advance. A student's fluency in English can be attempted to judge through the vocabulary and style of language adopted while writing the essay. The feedback features can be further exploited to provide a much valuable and meaningful comments to students for their better performance in the future.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .Figure 2 .</head><label>12</label><figDesc>Figure 1. Architecture diagram of automated essay grader</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Input:</head><label></label><figDesc>Essay written by a student Output: A score in scale 1-10 1: Initialize number of features to 300; 2: Load the weights from the saved model; 3: Load the saved Word2Vec model; 4: Create a word list, average input features and reshape the input essay; 5: Parse the input essay to detect syntactic errors; 6: Create custom tokens for the input essay by removing noise; 7: Obtain sentiment of the essay from the classifier; 8: Calculate total plagiarism; 9: Obtain grade for quality of the essay and reduce it to ratio of 3 from ratio of 10; 10: Determine number of grammatical and spelling mistakes, and deduct 0.25 marks for each; 11: If total plagiarism&lt;15% then 12:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>6589</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Kappa score collected from each fold</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 1 .</head><label>1</label><figDesc>The corresponding physical representation of kappa</figDesc><table><row><cell>Kappa value</cell><cell>Physical presentation</cell></row><row><cell>0.0-0.20</cell><cell>Almost inconsistent</cell></row><row><cell>ssss0.21-0.40</cell><cell>Generally consistent</cell></row><row><cell>0.41-0.60</cell><cell>Probably consistent</cell></row><row><cell>0.61-0.80</cell><cell>Highly consistent</cell></row><row><cell>0.81-1.0</cell><cell>Completely consistent</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGEMENTS</head><p>We would like thank Karnataka State Council of Science and Technology (KSCST) for funding this research.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>He has worked on various data science and machine learning related projects and successfully completed two internships at Raman Research Institute. Moreover, he is a data scientist enthusiast and excited to solve various problems. He can be contacted at email: krgvyas@gmail.com.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pranav Prashantha Patil</head><p>is an undergraduate student pursuing Computer Science and Engineering at Nitte Meenakshi Institute Of Technology, Bangalore. Pranav has worked on various Full stack based projects and successfully completed one year internship at Actyv. He is a data science enthusiast and currently gaining experience at Actyv. Apart from this he is a tech geek and is excited for new challenges. He can be contacted at email: pranavppatil08@gmail.com.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Jeevan Janardhan Acharya</head><p>is an undergraduate student pursuing Computer Science and Engineering at Nitte Meenakshi Institute of Technology, Bangalore. He has worked on various cloud based project such as AWS Environment Data Analaysis, Covid-19 assistance chatbot using AWS. Bangalore. He is currently a fresher gaining experience at Larsen and Tourbo Technology Services (LTTS). Besides, he has actively participated in Unnat Bharat Abhiyan as a student volunteer. He can be contacted at email: jeevanjacharya04@gmail.com.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sharvani Gunakimath Suryakanth</head><p>is an Associate Professor with the Department of Computer Science and Engineering at R. V. College of Engineering, Bengaluru, Karnataka, India. Her areas of specialisation are cloud computing, machine learning, internet of things and sensor networks. She can be contacted at email: sharvanigs@rvce.edu.in.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Automated Grading of Handwritten Essays</title>
+		<author>
+			<persName><forename type="first">Annapurna</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dinesh</forename><forename type="middle">Babu</forename><surname>Jayagopi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icfhr-2018.2018.00056</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 16th International Conference on Frontiers in Handwriting Recognition (ICFHR)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-08" />
+			<biblScope unit="page" from="279" to="284" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Design of an Automated Essay Grading (AEG) system in Indian context</title>
+		<author>
+			<persName><forename type="first">Siddhartha</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sameen</forename><forename type="middle">S</forename><surname>Fatima</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tencon.2008.4766677</idno>
+	</analytic>
+	<monogr>
+		<title level="m">TENCON 2008 - 2008 IEEE Region 10 Conference</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2008-11" />
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Intelligent Auto-grading System</title>
+		<author>
+			<persName><forename type="first">Zining</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianli</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruihai</forename><surname>Dong</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ccis.2018.8691244</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 5th IEEE International Conference on Cloud Computing and Intelligence Systems (CCIS)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-11" />
+			<biblScope unit="page" from="430" to="435" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Approaches For Automation In Assisting Evaluator For Grading Of Answer Scripts: A Survey</title>
+		<author>
+			<persName><forename type="first">Rudragouda</forename><forename type="middle">G</forename><surname>Patil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">Zakir</forename><surname>Ali</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ccaa.2018.8777664</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 4th International Conference on Computing Communication and Automation (ICCCA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-12" />
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">An Online Dynamic Examination System (ODES) based on open source software tools</title>
+		<author>
+			<persName><forename type="first">George</forename><forename type="middle">F</forename><surname>Fragulis</surname></persName>
+			<idno type="ORCID">0000-0002-8961-7423</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Papatsimouli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lazaros</forename><surname>Lazaridis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><forename type="middle">A</forename><surname>Skordas</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.simpa.2020.100046</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Software Impacts</title>
+		<title level="j" type="abbrev">Software Impacts</title>
+		<idno type="ISSN">2665-9638</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">100046</biblScope>
+			<date type="published" when="2021-02" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">A dynamic semantic space modelling approach for short essay grading</title>
+		<author>
+			<persName><forename type="first">Govinnage</forename><forename type="middle">R</forename><surname>Perera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deenuka</forename><forename type="middle">N</forename><surname>Perera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Weerasinghe</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icter.2015.7377665</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2015 Fifteenth International Conference on Advances in ICT for Emerging Regions (ICTer)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015-08" />
+			<biblScope unit="page" from="43" to="49" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">An Analysis of Automated Answer Evaluation Systems based on Machine Learning</title>
+		<author>
+			<persName><forename type="first">Birpal</forename><forename type="middle">Singh J</forename><surname>Kapoor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shubham</forename><forename type="middle">M</forename><surname>Nagpure</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sushil</forename><forename type="middle">S</forename><surname>Kolhatkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Prajwal</forename><forename type="middle">G</forename><surname>Chanore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohan</forename><forename type="middle">M</forename><surname>Vishwakarma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rohan</forename><forename type="middle">B</forename><surname>Kokate</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icict48043.2020.9112429</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 International Conference on Inventive Computation Technologies (ICICT)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-02" />
+			<biblScope unit="page" from="439" to="443" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Using Prescriptive Data Analytics to Reduce Grading Bias and Foster Student Success</title>
+		<author>
+			<persName><forename type="first">Ashwin</forename><surname>Satyanarayana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reneta</forename><surname>Lansiquot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename><surname>Rosalia</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/fie43999.2019.9028663</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE Frontiers in Education Conference (FIE)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-10" />
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Subtractive Neuro-Fuzzy modeling techniques applied to short essay auto- grading problem</title>
+		<author>
+			<persName><forename type="first">Yousef</forename><forename type="middle">M</forename><surname>Arikat</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/setit.2012.6482032</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2012 6th International Conference on Sciences of Electronics, Technologies of Information and Telecommunications (SETIT)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2012-03" />
+			<biblScope unit="page" from="889" to="895" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Experimenting with Latent Semantic Analysis and Latent Dirichlet Allocation on Automated Essay Grading</title>
+		<author>
+			<persName><forename type="first">Jalaa</forename><surname>Hoblos</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/snams52053.2020.9336533</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 Seventh International Conference on Social Networks Analysis, Management and Security (SNAMS)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-12-14" />
+			<biblScope unit="page" from="1" to="7" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Intelligent Scoring of English Composition by Machine Learning from the Perspective of Natural Language Processing</title>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaorong</forename><surname>Yuan</surname></persName>
+			<idno type="ORCID">0000-0002-5225-4171</idno>
+		</author>
+		<idno type="DOI">10.1155/2022/9070272</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematical Problems in Engineering</title>
+		<title level="j" type="abbrev">Mathematical Problems in Engineering</title>
+		<idno type="ISSN">1024-123X</idno>
+		<idno type="ISSNe">1563-5147</idno>
+		<imprint>
+			<biblScope unit="volume">2022</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2022-05-06" />
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Automated essay content analysis based on Concept Indexing with Fuzzy C-means clustering</title>
+		<author>
+			<persName><forename type="first">Abigail</forename><forename type="middle">R</forename><surname>Razon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ma.</forename><forename type="middle">Lourdes J</forename><surname>Vargas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rowena</forename><forename type="middle">Cristina L</forename><surname>Guevara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Prospero</forename><forename type="middle">C</forename><surname>Naval</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/apccas.2010.5775058</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2010 IEEE Asia Pacific Conference on Circuits and Systems</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2010-12" />
+			<biblScope unit="page" from="1167" to="1170" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">GLSA based online essay grading system</title>
+		<author>
+			<persName><forename type="first">Anak</forename><forename type="middle">Agung Putri</forename><surname>Ratna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Artajaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boma</forename><forename type="middle">Anantasatya</forename><surname>Adhi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tale.2013.6654461</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of 2013 IEEE International Conference on Teaching, Assessment and Learning for Engineering (TALE)</title>
+				<meeting>2013 IEEE International Conference on Teaching, Assessment and Learning for Engineering (TALE)</meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2013-08" />
+			<biblScope unit="page" from="358" to="361" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Embedding Information Retrieval and Nearest-Neighbour Algorithm into Automated Essay Grading System</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M F Ds. </forename><surname>Mustapha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Idris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Abdullah</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icita.2005.126</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Third International Conference on Information Technology and Applications (ICITA&apos;05)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date>2005</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="169" to="172" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Syntactic, Semantic and Sentiment Analysis: The Joint Effect on Automated Essay Evaluation</title>
+		<author>
+			<persName><forename type="first">Harneet</forename><forename type="middle">Kaur</forename><surname>Janda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Atish</forename><surname>Pawar</surname></persName>
+			<idno type="ORCID">0000-0003-4857-4057</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shan</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vijay</forename><surname>Mago</surname></persName>
+			<idno type="ORCID">0000-0002-9741-3463</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2019.2933354</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="108486" to="108503" />
+			<date type="published" when="2019" />
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Automated essay scoring using generalized latent semantic analysis</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">M</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S M L</forename><surname>Hoque</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICCITECHN.2010.5723884</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2010 13th International Conference on Computer and Information Technology (ICCIT)</title>
+				<imprint>
+			<date type="published" when="2010-12" />
+			<biblScope unit="page" from="358" to="363" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Short Answer Scoring in English Grammar Using Text Similarity Measurement</title>
+		<author>
+			<persName><forename type="first">Akeem</forename><surname>Olowolayemo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Santhy</forename><forename type="middle">David</forename><surname>Nawi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Teddy</forename><surname>Mantoro</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icced.2018.00034</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 International Conference on Computing, Engineering, and Design (ICCED)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-09" />
+			<biblScope unit="page" from="131" to="136" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Prototype of Automatic Essay Assessment and Plagiarism Detection on Mobile Learning &quot;Molearn&quot; Application Using GLSA Method</title>
+		<author>
+			<persName><forename type="first">Julianto</forename><surname>Lemantara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Dewiyani Sunarto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bambang</forename><surname>Hariadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tri</forename><surname>Sagirani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tan</forename><surname>Amelia</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/isriti48646.2019.9034652</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Seminar on Research of Information Technology and Intelligent Systems (ISRITI)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-12" />
+			<biblScope unit="page" from="314" to="319" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Essay scoring systems using AI and feature extraction: a review</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">V</forename><surname>Shetty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Guruvyas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">P</forename><surname>Patil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Acharya</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-981-16-8862-1_4</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of Third International Conference on Communication, Computing and Electronics Systems</title>
+				<meeting>Third International Conference on Communication, Computing and Electronics Systems<address><addrLine>Singapore</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2022" />
+			<biblScope unit="page" from="45" to="57" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">An automated essay scoring systems: a systematic literature review</title>
+		<author>
+			<persName><forename type="first">Dadi</forename><surname>Ramesh</surname></persName>
+			<idno type="ORCID">0000-0002-3967-8914</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Suresh</forename><forename type="middle">Kumar</forename><surname>Sanampudi</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10462-021-10068-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Intelligence Review</title>
+		<title level="j" type="abbrev">Artif Intell Rev</title>
+		<idno type="ISSN">0269-2821</idno>
+		<idno type="ISSNe">1573-7462</idno>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="2495" to="2527" />
+			<date type="published" when="2021-09-23" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Automated English Digital Essay Grader Using Machine Learning</title>
+		<author>
+			<persName><forename type="first">Yafet</forename><surname>Salim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valdi</forename><surname>Stevanus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edwardo</forename><surname>Barlian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Azani</forename><forename type="middle">Cempaka</forename><surname>Sari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Derwin</forename><surname>Suhartono</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tale48000.2019.9226022</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE International Conference on Engineering, Technology and Education (TALE)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-12" />
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Machine learning towards intelligent systems: applications, challenges, and opportunities</title>
+		<author>
+			<persName><forename type="first">Mohammadnoor</forename><surname>Injadat</surname></persName>
+			<idno type="ORCID">0000-0003-1959-0058</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Abdallah</forename><surname>Moubayed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><forename type="middle">Bou</forename><surname>Nassif</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdallah</forename><surname>Shami</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10462-020-09948-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Intelligence Review</title>
+		<title level="j" type="abbrev">Artif Intell Rev</title>
+		<idno type="ISSN">0269-2821</idno>
+		<idno type="ISSNe">1573-7462</idno>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="3299" to="3348" />
+			<date type="published" when="2021-01-08" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Assessment of Indonesian Short Essay using Transfer Learning Siamese Dependency Tree-LSTM</title>
+		<author>
+			<persName><forename type="first">Agung</forename><surname>Wiratmo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chastine</forename><surname>Fatichah</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icicos51170.2020.9299044</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 4th International Conference on Informatics and Computational Sciences (ICICoS)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-11-10" />
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Automatic Essay Scoring Incorporating Rating Schema via Reinforcement Learning</title>
+		<author>
+			<persName><forename type="first">Yucheng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongyu</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaqian</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuanjing</forename><surname>Huang</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/d18-1090</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</title>
+				<meeting>the 2018 Conference on Empirical Methods in Natural Language Processing</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="791" to="797" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">A hybrid scheme for Automated Essay Grading based on LVQ and NLP techniques</title>
+		<author>
+			<persName><forename type="first">Abdulaziz</forename><surname>Shehab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><surname>Elhoseny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aboul</forename><forename type="middle">Ella</forename><surname>Hassanien</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icenco.2016.7856447</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2016 12th International Computer Engineering Conference (ICENCO)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-12" />
+			<biblScope unit="page" from="65" to="70" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
