@@ -42,7 +42,7 @@ This tool analyzes research papers to provide structured, reviewer-style feedbac
 
 1. **Clone the repository and install dependencies:**  
    ```bash
-   git clone https://github.com/BhaveshBhakta/Automated-Academic-Peer-Review-Assistant
+   git clone https://https://github.com/somethingshawnx/Automated-Academic-Peer-Review-Assistant
    cd Automated-Academic-Peer-Review-Assistant
    pip install -r requirements.txt
     ````
