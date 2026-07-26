@@ -11,4 +11,8 @@ function showLoading() {
         ? "Deep Search enabled… downloading papers, updating index, analyzing…"
         : "Uploading paper, extracting content, running analysis…";
     document.getElementById("loading-text").innerText = text;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 207b69cc470569cd2f15ae6043c87e1cbac834d0

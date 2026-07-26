@@ -1,0 +1,526 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Minimum complexity density estimation</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Barron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Cover</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. on Information Theory</title>
+		<imprint>
+			<biblScope unit="page" from="1034" to="1054" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Principle and Practice of Information Theory</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Blahut</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1988">1988</date>
+			<publisher>Addison-Wesley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Elements of Information Theory</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Cover</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Thomas</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1991">1991</date>
+			<publisher>Wiley-Interscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Learning probabilistic prediction functions</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Desantis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Markowsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">N</forename><surname>Wegman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the First Annual Workshop on Computational Learning Theory</title>
+				<meeting>the First Annual Workshop on Computational Learning Theory</meeting>
+		<imprint>
+			<publisher>Morgan Kaufmann</publisher>
+			<date type="published" when="1988">1988</date>
+			<biblScope unit="page" from="312" to="328" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Asymptotically optimal classification for multiple tests with empirically observed statistics</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gutman</surname></persName>
+		</author>
+		<idno>IT-35</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. on Information Theory</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="401" to="408" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Discrimination and Classification</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Hand</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1981">1981</date>
+			<publisher>Wiley</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">How well does the Bayes method work in on-line predictions of { + 1, -1}-values</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Haussler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barron</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Third NEC Symposium</title>
+				<meeting>the Third NEC Symposium</meeting>
+		<imprint>
+			<publisher>SIAM</publisher>
+			<date type="published" when="1992">1992</date>
+			<biblScope unit="page" from="74" to="100" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">A generalization of Sauer&apos;s lemma</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Haussler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Long</surname></persName>
+		</author>
+		<idno>UCSC CRL-90-15</idno>
+		<imprint>
+			<date type="published" when="1990">1990</date>
+		</imprint>
+		<respStmt>
+			<orgName>University of California at Santa Cruz</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Technical Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Probability inequalities for sums of bounded random variables</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hoeffding</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Jr. Amer. Stat. Assoc</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="13" to="30" />
+			<date type="published" when="1963">1963</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Asymptotically optimal test for multinomial distributions</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hoeffding</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Mathematical Statistics</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="369" to="400" />
+			<date type="published" when="1965">1965</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Efficient distribution-free learning of probabilistic concepts</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kearns</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Schapire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computer and System Sciences</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="464" to="497" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">A device for quantizing, grouping, and coding amplitude modulated pulses</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kraft</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1949">1949</date>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Department of Electrical Engineering, MIT</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">M.S. Thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Modeling by shortest data description</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rissanen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Automatica</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="465" to="471" />
+			<date type="published" when="1978">1978</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">A universal prior for integers and estimation by minimum description length</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rissanen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Statistics</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="416" to="431" />
+			<date type="published" when="1983">1983</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Stochastic complexity</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rissanen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J.R. Statist. Soc. B</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page" from="223" to="239" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rissanen</surname></persName>
+		</author>
+		<title level="m">Stochastic Complexity in Statistical Inquiry. World Scientific, Series in Computer Science</title>
+				<imprint>
+			<date type="published" when="1989">1989</date>
+			<biblScope unit="page">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">MDL learning. Progress in Automation and Information Systems</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rissanen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning</title>
+				<imprint>
+			<publisher>Springer Verlag</publisher>
+			<date type="published" when="1987">1991. 1987</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="229" to="246" />
+		</imprint>
+	</monogr>
+	<note>Learning decision lists</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Estimation of the dimension of a model</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Schwarz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Statistics</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="416" to="446" />
+			<date type="published" when="1978">1978</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A mathematical theory of communications</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Shannon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bell Syst. Tech. J</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="147" to="157" />
+			<date type="published" when="1948">1948</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">A theory of the learnable</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">G</forename><surname>Valiant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications, of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="1134" to="1142" />
+			<date type="published" when="1984">1984</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">An information measure for classification</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Wallace</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Boulton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Journal</title>
+		<imprint>
+			<biblScope unit="page" from="185" to="194" />
+			<date type="published" when="1968">1968</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">A loss bound model for on-line stochastic prediction strategies</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Yamanishi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Fourth Annual Workshop on Computational Learning Theory</title>
+				<meeting>the Fourth Annual Workshop on Computational Learning Theory</meeting>
+		<imprint>
+			<publisher>Morgan Kaufmann</publisher>
+			<date type="published" when="1991">1991</date>
+			<biblScope unit="page" from="290" to="302" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A learning criterion for stochastic rules</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Yamanishi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning: Special Issues for COLT-90</title>
+				<imprint>
+			<date type="published" when="1992">1992a</date>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="165" to="203" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Probably almost discriminative learning</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Yamanishi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Fifth ACM Workshop on Computational Learning Theory</title>
+				<meeting>the Fifth ACM Workshop on Computational Learning Theory</meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="1992">1992b</date>
+			<biblScope unit="page" from="164" to="171" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">On polynomial-time probably almost discriminative learnability</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Yamanishi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Sixth ACM Conference on Computational Learning Theory</title>
+				<meeting>the Sixth ACM Conference on Computational Learning Theory</meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="1993">1993</date>
+			<biblScope unit="page" from="94" to="100" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">On universal hypothesis testing via large deviations</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Zeitouni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gutman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans, on Information Theory, IT</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="285" to="290" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">On classification with empirically observed statistics and universal data compression</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ziv</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. on Information Theory</title>
+		<imprint>
+			<biblScope unit="page" from="278" to="286" />
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Compression of individual sequences via variable-rate coding</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ziv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Lempel</surname></persName>
+		</author>
+		<idno>IT-24</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. on Information Theory</title>
+		<imprint>
+			<biblScope unit="page" from="530" to="536" />
+			<date type="published" when="1978">1978</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">Final Manuscript November</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

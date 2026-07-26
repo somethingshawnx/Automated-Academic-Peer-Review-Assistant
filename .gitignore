@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependencies
 **/node_modules/
 
@@ -14,3 +15,11 @@
 **/data/parsed_text/
 **/data/results/
 **/uploads/
+=======
+.env
+__pycache__
+data/pdfs/
+data/parsed_text/
+data/results
+uploads
+>>>>>>> 207b69cc470569cd2f15ae6043c87e1cbac834d0
