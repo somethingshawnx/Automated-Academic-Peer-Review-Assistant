@@ -1,4 +1,4 @@
-# **Agentic-Academic-Peer-Review-Assistant**
+# **Automated-Academic-Peer-Review-Assistant**
 
 An AI-powered system for automated academic peer review.
 
